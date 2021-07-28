@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #333652;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Exam">
+   <children>
+      <Label contentDisplay="RIGHT" layoutX="569.0" layoutY="8.0" onMouseEntered="#bouttIn" onMouseExited="#bouttOut" onMousePressed="#bouttonExt" text="X" textFill="#9ea1a4" fx:id="x">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <HBox layoutX="14.0" layoutY="44.0" prefHeight="26.0" prefWidth="574.0" style="-fx-background-color: #f0f1f2; -fx-background-radius: 5;">
+         <children>
+            <AnchorPane prefHeight="46.0" prefWidth="60.0" />
+            <ImageView fitHeight="40.0" fitWidth="55.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/fc6eec59602adf47250c54e3bf08c4e5.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets top="2.0" />
+               </HBox.margin>
+            </ImageView>
+            <AnchorPane prefHeight="42.0" prefWidth="26.0" />
+            <Label opacity="0.47" text="Exams Corner" textFill="#848282">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="51.0" layoutY="131.0" prefHeight="89.0" prefWidth="151.0">
+         <children>
+            <Label fx:id="q1" layoutX="21.0" layoutY="5.0" prefHeight="18.0" prefWidth="136.0" text="quest1*" textFill="#ffffff" />
+            <ComboBox fx:id="r1" layoutX="14.0" layoutY="36.0" prefHeight="26.0" prefWidth="114.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="51.0" layoutY="221.0" prefHeight="89.0" prefWidth="151.0">
+         <children>
+            <Label fx:id="q2" layoutX="21.0" layoutY="5.0" prefHeight="18.0" prefWidth="136.0" text="quest2*" textFill="#ffffff" />
+            <ComboBox fx:id="r2" layoutX="14.0" layoutY="36.0" prefHeight="26.0" prefWidth="114.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="221.0" layoutY="131.0" prefHeight="89.0" prefWidth="151.0">
+         <children>
+            <Label fx:id="q3" layoutX="11.0" layoutY="5.0" prefHeight="18.0" prefWidth="136.0" text="quest3*" textFill="#ffffff" />
+            <ComboBox fx:id="r3" layoutX="14.0" layoutY="36.0" prefHeight="26.0" prefWidth="114.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="221.0" layoutY="221.0" prefHeight="89.0" prefWidth="151.0">
+         <children>
+            <Label fx:id="q4" layoutX="21.0" layoutY="5.0" prefHeight="18.0" prefWidth="136.0" text="quest4*" textFill="#ffffff" />
+            <ComboBox fx:id="r4" layoutX="14.0" layoutY="36.0" prefHeight="26.0" prefWidth="114.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="402.0" layoutY="131.0" prefHeight="89.0" prefWidth="151.0">
+         <children>
+            <Label fx:id="q5" layoutX="21.0" layoutY="5.0" prefHeight="18.0" prefWidth="136.0" text="quest5*" textFill="#ffffff" />
+            <ComboBox fx:id="r5" layoutX="14.0" layoutY="36.0" prefHeight="26.0" prefWidth="114.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="402.0" layoutY="221.0" prefHeight="89.0" prefWidth="151.0">
+         <children>  
+            <Label fx:id="q6" layoutX="21.0" layoutY="5.0" prefHeight="18.0" prefWidth="136.0" text="quest6*" textFill="#ffffff" />
+            <ComboBox fx:id="r6" layoutX="14.0" layoutY="36.0" prefHeight="26.0" prefWidth="114.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="455.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#ok" prefHeight="26.0" prefWidth="79.0" text="OK" />
+      <Button layoutX="362.0" layoutY="344.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="79.0" text="Réinitialiser" />
+      <Button layoutX="115.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#mod" text="Afficher examen" />
+      <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="36.0" layoutY="342.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #333652;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InterP">
+   <children>
+      <VBox layoutX="250.0" layoutY="100.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BDC3CB;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ButtonBar prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #9ea1a4;">
+              <buttons>
+                  <ImageView fitHeight="50.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.8;">
+                     <image>
+                        <Image url="http://www.enicarthage.rnu.tn/assets/images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane prefHeight="39.0" prefWidth="502.0" style="-fx-background-color: #9ea1a4;" />
+              </buttons>
+            </ButtonBar>
+            <BorderPane fx:id="bp" prefHeight="378.0" prefWidth="600.0" style="-fx-background-color: #BDC3CB;">
+               <left>
+                  <VBox prefHeight="362.0" prefWidth="138.0" style="-fx-background-color: #9ea1a4;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#Bprofil" prefHeight="58.0" prefWidth="162.0" style="-fx-background-color: transparent;" text="Modifer Profil" textFill="#333652">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font></Button>
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#Bdepo" prefHeight="58.0" prefWidth="162.0" style="-fx-background-color: transparent;" text="Deposer Examens" textFill="#333652">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font></Button>
+                        <Button layoutX="10.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#Bnot" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: transparent;" text="Noter Examens" textFill="#333652">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font></Button>
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <AnchorPane fx:id="ap" prefHeight="305.0" prefWidth="450.0" style="-fx-background-color: #333652;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button layoutX="332.0" layoutY="317.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: #9ea1a4; -fx-background-radius: 10;" text="Déconnexion">
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <textFill>
+                              <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#fad02c" />
+                                    <Stop color="#333652" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </VBox>
+      <Label contentDisplay="RIGHT" layoutX="574.0" layoutY="9.0" onMouseEntered="#bouttIn" onMouseExited="#bouttOut" onMousePressed="#bouttonExt" text="X" textFill="#1e76ea" fx:id="x">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

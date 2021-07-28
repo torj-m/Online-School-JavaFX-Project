@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #333652;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PouE">
+   <children>
+      <Label contentDisplay="RIGHT" layoutX="568.0" layoutY="12.0" onMouseEntered="#bouttIn" onMouseExited="#bouttOut" onMousePressed="#bouttonExt" text="X" textFill="#bdc3cb" fx:id="x">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <StackPane layoutX="65.0" layoutY="105.0" onMouseEntered="#mouseIn1" onMouseExited="#mouseOut1" onMousePressed="#Pclick" prefHeight="190.0" prefWidth="190.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="imp" fitHeight="200.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(255,255,0,0.8), 10, 0, 0, 0);">
+               <image>
+                  <Image url="@../image/illustration-concept-enseignant_114360-2166.jpg" />
+               </image>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </ImageView>
+            <Label fx:id="labP" opacity="0.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: #75e6da; -fx-border-width: 1; -fx-background-radius: 10;" text="Professeur" textAlignment="CENTER" textFill="#90adc6">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </StackPane>
+      <StackPane layoutX="332.0" layoutY="105.0" onMouseEntered="#mouseIn2" onMouseExited="#mouseOut2" onMousePressed="#Pclick" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="ime" fitHeight="190.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(255,255,0,0.8), 10, 0, 0, 0);">
+               <image>
+                  <Image url="@../image/etudiants-portant-masques-faciaux_23-2148586885.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="labE" opacity="0.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-width: 1; -fx-border-radius: 10; -fx-border-color: #75e6da;" text="Etudiant" textAlignment="CENTER" textFill="#90adc6">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </StackPane>
+   </children>
+</AnchorPane>

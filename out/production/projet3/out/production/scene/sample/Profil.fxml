@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="584.0" style="-fx-background-color: #333652;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Profil">
+   <children>
+      <AnchorPane prefHeight="89.0" prefWidth="584.0">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="137.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="http://www.enicarthage.rnu.tn/assets/images/logo.png" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="RIGHT" layoutX="552.0" layoutY="11.0" onMouseEntered="#bouttIn" onMouseExited="#bouttOut" onMousePressed="#bouttonExt" text="X" textFill="#9ea1a4" fx:id="x">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox prefHeight="49.0" prefWidth="584.0">
+         <children>
+            <AnchorPane prefHeight="100.0" prefWidth="119.0" />
+            <Label text="Nom et Prenom" textFill="WHITE" />
+            <AnchorPane prefHeight="60.0" prefWidth="130.0" />
+            <TextField alignment="CENTER" prefHeight="26.0" prefWidth="177.0" promptText="Nom &amp; Prenom" style="-fx-background-color: #E9EAEC;" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="584.0">
+         <children>
+            <AnchorPane prefHeight="100.0" prefWidth="119.0" />
+            <Label text="Date de naissance" textFill="WHITE" />
+            <AnchorPane prefHeight="50.0" prefWidth="119.0" />
+            <TextField alignment="CENTER" prefHeight="26.0" prefWidth="177.0" promptText="Date de Naissance" style="-fx-background-color: #E9EAEC;" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="70.0" prefHeight="49.0" prefWidth="584.0">
+         <children>
+            <AnchorPane prefHeight="100.0" prefWidth="119.0" />
+            <Label text="Téléphone" textFill="WHITE" />
+            <AnchorPane prefHeight="50.0" prefWidth="161.0" />
+            <TextField alignment="CENTER" prefHeight="26.0" prefWidth="177.0" promptText="Téléphone" style="-fx-background-color: #E9EAEC;" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="130.0" prefHeight="53.0" prefWidth="584.0">
+         <children>
+            <AnchorPane prefHeight="100.0" prefWidth="119.0" />
+            <Label text="Email" textFill="WHITE" />
+            <AnchorPane prefHeight="60.0" prefWidth="185.0" />
+            <TextField alignment="CENTER" prefHeight="26.0" prefWidth="177.0" promptText="exemple@exemple.com" style="-fx-background-color: #E9EAEC;" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="250.0" prefHeight="54.0" prefWidth="584.0">
+         <children>
+            <AnchorPane prefHeight="100.0" prefWidth="119.0" />
+            <Label text="Mot de passe" textFill="WHITE" />
+            <AnchorPane prefHeight="54.0" prefWidth="142.0" />
+            <TextField alignment="CENTER" prefHeight="26.0" prefWidth="177.0" promptText="Mot de Passe " style="-fx-background-color: #E9EAEC;" />
+         </children>
+      </HBox>
+      <ButtonBar prefHeight="64.0" prefWidth="584.0">
+        <buttons>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="58.0" prefHeight="58.0" prefWidth="150.0" />
+            <Button mnemonicParsing="false" onContextMenuRequested="#init" text="Réinitialiser">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#fad02c" />
+                        <Stop color="#333652" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+          <Button mnemonicParsing="false" onMouseClicked="#sauve" text="Sauvegarder ">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#fad02c" />
+                        <Stop color="#333652" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill></Button>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="58.0" prefHeight="58.0" prefWidth="150.0" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</VBox>

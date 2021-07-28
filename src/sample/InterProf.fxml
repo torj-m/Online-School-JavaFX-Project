@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #333652;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InterProf">
+    <children>
+        <AnchorPane prefHeight="103.0" prefWidth="600.0" style="-fx-background-color: #333652;">
+            <children>
+                <Label contentDisplay="RIGHT" layoutX="570.0" layoutY="8.0" onMouseEntered="#bouttIn" onMouseExited="#bouttOut" onMousePressed="#bouttonExt" text="X" textFill="#9ea1a4" fx:id="x">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+                <ImageView fitHeight="34.0" fitWidth="97.0" layoutX="12.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="http://www.enicarthage.rnu.tn/assets/images/logo.png" />
+                    </image>
+                </ImageView>
+                <HBox layoutX="9.0" layoutY="52.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="584.0" style="-fx-background-color: #f0f1f2; -fx-background-radius: 5;">
+                    <children>
+                        <AnchorPane prefHeight="43.0" prefWidth="37.0" />
+                        <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/15766.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets top="4.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <AnchorPane prefHeight="43.0" prefWidth="393.0">
+                            <children>
+                                <Label layoutX="14.0" layoutY="12.0" opacity="0.47" text="Welcome to ENICarthage Application " textFill="#848282">
+                                    <font>
+                                        <Font name="Arial Bold Italic" size="15.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMousePressed="#Pclick" opacity="0.78" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #e63946;" text="Déconnexion" textFill="WHITE">
+                            <effect>
+                                <Glow />
+                            </effect>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets bottom="8.0" left="8.0" right="8.0" top="6.0" />
+                            </padding>
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets top="7.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="274.0" prefWidth="146.0" style="-fx-background-color: #f0f1f2; -fx-background-radius: 5;">
+                    <children>
+                        <HBox prefHeight="46.0" prefWidth="134.0" style="-fx-background-color: #e6e7e8; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #FFF;">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="2.0" right="2.0" top="15.0" />
+                            </VBox.margin>
+                            <children>
+                                <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/pngtree-vector-edit-profile-icon-png-image_758006.jpg" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="2.0" top="3.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label onMousePressed="#Clicky" text="Modifier Profil" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Arial" size="13.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" top="10.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </HBox>
+                        <HBox prefHeight="46.0" prefWidth="134.0" style="-fx-background-color: #e6e7e8; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #FFF;">
+                            <children>
+                                <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/795caf79bd23835f75e46c3efaf1656f.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets top="6.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label onMouseClicked="#clickcr" text="Créer Examens" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Arial" size="13.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="2.0" right="2.0" />
+                            </VBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </HBox>
+                        <HBox onMouseClicked="#interNot" prefHeight="46.0" prefWidth="134.0" style="-fx-background-color: #e6e7e8; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #FFF;">
+                            <children>
+                                <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/telechargement2.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="2.0" top="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label onMouseClicked="#noter" text="Valider Examens" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Arial" size="13.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" top="10.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <VBox.margin>
+                                <Insets left="2.0" right="2.0" />
+                            </VBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                    </HBox.margin>
+                </VBox>
+                <GridPane prefHeight="258.0" prefWidth="414.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.199951171875" minWidth="10.0" prefWidth="131.20001220703125" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="316.20001220703125" minWidth="10.0" prefWidth="129.59998779296876" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="316.20001220703125" minWidth="10.0" prefWidth="134.19998779296873" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="192.00002746582032" minHeight="10.0" prefHeight="48.000008392333996" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="231.4000099182129" minHeight="10.0" prefHeight="230.59999160766603" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <HBox.margin>
+                        <Insets left="10.0" top="50.0" />
+                    </HBox.margin>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/to-do-list.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="To-Do List" textFill="#fff8f8">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="6.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/conversation.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Réunions" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <ImageView fitHeight="26.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/news.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Actualités" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <TextArea fx:id="txt" layoutX="10.0" layoutY="25.0" prefHeight="181.0" prefWidth="122.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="25.0" />
+                        <ImageView fitHeight="18.0" fitWidth="38.0" layoutX="100.0" layoutY="198.0" onMouseClicked="#delete" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/delete.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="14.0" layoutX="7.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/record-button.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="25.0" layoutY="22.0" prefHeight="18.0" prefWidth="98.0" text="Conseil scientifique" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+                </GridPane>
+            </children>
+        </HBox>
+    </children>
+</VBox>

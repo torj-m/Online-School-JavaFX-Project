@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #333652;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DExam">
+    <children>
+        <Label contentDisplay="RIGHT" layoutX="569.0" layoutY="8.0" onMouseEntered="#bouttIn" onMouseExited="#bouttOut" onMousePressed="#bouttonExt" text="X" textFill="#9ea1a4" fx:id="x">
+            <font>
+                <Font name="Arial Bold" size="20.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <HBox layoutX="14.0" layoutY="44.0" prefHeight="26.0" prefWidth="574.0" style="-fx-background-color: #f0f1f2; -fx-background-radius: 5;">
+            <children>
+                <AnchorPane prefHeight="46.0" prefWidth="60.0" />
+                <ImageView fitHeight="40.0" fitWidth="55.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/fc6eec59602adf47250c54e3bf08c4e5.jpg" />
+                    </image>
+                    <HBox.margin>
+                        <Insets top="2.0" />
+                    </HBox.margin>
+                </ImageView>
+                <AnchorPane prefHeight="42.0" prefWidth="26.0" />
+                <Label opacity="0.47" text="Créer un examen" textFill="#848282">
+                    <HBox.margin>
+                        <Insets top="10.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Arial Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+      <VBox layoutX="14.0" layoutY="94.0" prefHeight="292.0" prefWidth="574.0">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="574.0">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="159.0" text="Matière" textFill="WHITE" />
+                  <TextField fx:id="mat" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="574.0">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="159.0" text="Deadline" textFill="WHITE" />
+                  <TextField fx:id="dead" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox layoutX="10.0" layoutY="64.0" prefHeight="54.0" prefWidth="574.0">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="159.0" text="Saisir une Question:" textFill="WHITE" />
+                  <TextField fx:id="quest" prefHeight="19.0" prefWidth="350.0">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="122.0" prefHeight="54.0" prefWidth="574.0">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="190.0" text="Donner les réponses possibles" textFill="WHITE" />
+                  <TextField fx:id="rep" prefHeight="26.0" prefWidth="172.0">
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onMouseClicked="#ajRep" prefHeight="26.0" prefWidth="92.0" text="Ajouter Rép">
+                     <HBox.margin>
+                        <Insets left="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="81.0" prefWidth="574.0">
+               <children>
+                  <Button layoutX="400.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#ajquest" prefHeight="26.0" prefWidth="92.0" text="Ajouter Quest" />
+                  <Button layoutX="399.0" layoutY="54.0" mnemonicParsing="false" onMouseClicked="#creer" prefHeight="26.0" prefWidth="92.0" text="Créer" />
+                  <Separator layoutX="12.0" layoutY="52.0" prefHeight="3.0" prefWidth="550.0" />
+                  <Separator layoutX="18.0" prefHeight="3.0" prefWidth="538.0" />
+                  <TextField fx:id="et" layoutX="213.0" layoutY="15.0" prefHeight="26.0" prefWidth="134.0" />
+                  <Label layoutX="12.0" layoutY="19.0" text="l'indice de la bonne réponse" textFill="WHITE" />
+                  <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="12.0" layoutY="52.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/back.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
